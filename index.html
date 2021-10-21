@@ -93,8 +93,8 @@
 
                     poblacion.forEach((d) => {
                         lasRegiones.push(d.region);
-                        rubano.push(d.hombres);
-                        rural.push(d.mujeres);
+                        ubano.push(d.urbano);
+                        rural.push(d.rural);
                     });
 
                     new Chart(document.getElementById("misBarritas").getContext("2d"), {
@@ -127,7 +127,7 @@
                             plugins: {
                                 title: {
                                     display: true,
-                                    text: "POBLACIÓN: POR SEXO Y REGIONES, CENSO 2017",
+                                    text: "POBLACIÓN: URBANA Y RURAL, CENSO 2017",
                                 },
                             },
                         },
