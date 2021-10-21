@@ -15,10 +15,6 @@ Para seleccionarlas, revise: https://getbootstrap.com/docs/5.1/customize/css-var
     --bs-body-font-weight: 300;
 }
 
-/*
-Si el peso de la fuente para sus títulos y negrita es distinto de 600, 
-indique cuál sería (ver pesos de fuente importada)
-*/
 
 h1,
 h2,
@@ -30,17 +26,6 @@ strong {
     font-weight: 900;
 }
 
-/*
-En #fondo-con-imagen, defina una imagen para el encabezado, cuidando: 
-
-- pertinencia (sirve para introducir su tema);
-- legibilidad de títulos en contraste (que no se pierdan h1, h2 ni h3);
-- extensión (JPG o PNG, según corresponda a la imagen); y
-- peso (menor a 250kb, sin sacrificar resolución)
-
-Referencia útil: https://www.adslzone.net/como-se-hace/photoshop/guardar-imagen-para-web/
-En tal referencia se mencionan las alternativas https://squoosh.app/ y https://tinypng.com/
-*/
 
 #fondo-con-imagen {
     height: 70vh;
@@ -51,9 +36,3 @@ En tal referencia se mencionan las alternativas https://squoosh.app/ y https://t
 }
 
 
-
-/*
-Una vez hecho los ajustes indicados como comentarios, por favor bórrelos. 
-Su lectura de los comentarios será considerada en el primer ítem de la pauta de evaluación.
-En lo que sigue, puede agregar más ajustes.
-*/
