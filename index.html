@@ -83,18 +83,18 @@
         ></script>
         <!--con el siguiente script voy a buscar datos a un JSON y con ellos construyo un gráfico de barras-->
         <script>
-            fetch("http://myjson.dit.upm.es/api/bins/1jmr")
+            fetch("http://myjson.dit.upm.es/api/bins/1pvr")
                 .then((response) => response.json())
                 .then((poblacion) => {
                     console.log(poblacion);
                     var lasRegiones = [],
-                        inmigrantesInternacionales = [],
-                        poblaciónResidente = [];
+                        urbano = [],
+                        rural = [];
 
                     poblacion.forEach((d) => {
                         lasRegiones.push(d.region);
-                         inmigrantesInternacionales.push(d.hombres);
-                        poblaciónResidente.push(d.mujeres);
+                        rubano.push(d.hombres);
+                        rural.push(d.mujeres);
                     });
 
                     new Chart(document.getElementById("misBarritas").getContext("2d"), {
@@ -103,14 +103,14 @@
                             labels: lasRegiones,
                             datasets: [
                                 {
-                                    data: losHombres,
+                                    data: urbano,
                                     backgroundColor: "#f1a340",
-                                    label: "Hombres",
+                                    label: "Urbano",
                                 },
                                 {
-                                    data: lasMujeres,
+                                    data: rural,
                                     backgroundColor: "#645294",
-                                    label: "Mujeres",
+                                    label: "Rural",
                                 },
                             ],
                         },
